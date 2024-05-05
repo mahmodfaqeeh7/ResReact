@@ -1,0 +1,87 @@
+.section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+.section1 {
+    background-image: url('../assets/back1.jpg'); /* Add your background image URL */
+}
+
+.section2 {
+    background-image: url('../assets/back3.jpg'); /* Add your background image URL */
+}
+
+.section3 {
+    background-image: url('../assets/back2.jpg'); /* Add your background image URL */
+}
+
+.content {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: left; /* Align content to the left */
+    color: #fff;
+  }
+  .content2 {
+    width: 50%; /* Adjust width as needed */
+    margin-left: 50% ; /* Center the content horizontally */
+    text-align: left; /* Align content to the left */
+    color: #fff;
+  }
+  
+  .h12 {
+    font-size: 42px; /* Adjust the font size as desired */
+  }
+
+
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .section {
+        height: 600px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .button {
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section1 .content {
+        text-align: left;
+    }
+
+    .section2 .content {
+        text-align: right;
+    }
+
+    .section3 .content {
+        text-align: left;
+    }
+
+    .section .content {
+        max-width: 90%;
+    }
+}
